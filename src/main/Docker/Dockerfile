@@ -1,6 +1,6 @@
 FROM java:8
 MAINTAINER ant-fy
-COPY . /home/fy-linux/images
-WORKDIR /home/fy-linux/images
-RUN javac Main.java
+COPY . /usr/src/myapp
+WORKDIR /usr/src/myapp
+RUN javac /src/main/java/com/mayi/Main.java
 CMD ["java", "Main"]
